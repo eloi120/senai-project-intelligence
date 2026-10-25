@@ -1360,6 +1360,7 @@ def assistant_page() -> None:
                     try:
                         resposta_http = requests.post(
                             st.secrets["N8N_WEBHOOK_URL"],
+                            headers={"X-SENAI-API-KEY": st.secrets["N8N_API_KEY"]},
                             json={
                                 "chatInput": pergunta,
                                 "sessionId": st.session_state.sessao_chat,
