@@ -1,0 +1,15 @@
+
+# Ambiente virtual
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Credenciais
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Arquivos temporários
+*.log
+.pytest_cache/
